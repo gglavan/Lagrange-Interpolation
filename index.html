@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>Lagrange Interpolation</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.17.0/math.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">  
+  <script src="https://wzrd.in/standalone/function-plot@1.14.0"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Lagrange Interpolation</h2>
+    <div class="row">
+      <div class="col s6">
+        <div id="plot"></div>
+      </div>
+      <div class="col s6">
+        <form id="form">
+          <div class="row">
+            <div class="input-field">
+              <input id="eq" type="text" placeholder="Example: 3*x^2-5x" value="x^2" class="validate">
+              <label for="eq">Enter the initial polynomial</label>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="xValues" type="text" placeholder="0,1,2,3..." class="validate">
+                <label for="xValues">Enter the X values</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="yValues" type="text" placeholder="0,1,4,9..." class="validate">
+                <label for="yValues">Enter the Y values</label>
+              </div>
+            </div>
+            <button class="waves-effect waves-light btn teal accent-4" type="submit">Find</button>
+            <div class="output z-depth-1">
+              <p id="outputPolynome"></p>
+              <p id="outputValues"></p> 
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="./src/lagrange.js"></script>
+
+</body>
+</html>

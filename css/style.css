@@ -1,0 +1,16 @@
+h2 {
+	text-align: center;
+	color: #00bfa5;
+	margin-bottom: 100px !important;
+}
+
+#plot {
+	width: 100%;
+	height: auto;
+}
+
+.output {
+	margin-top: 50px;
+	padding: 10px;
+	display: none;
+}
